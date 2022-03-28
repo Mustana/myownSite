@@ -1,0 +1,378 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #22244a;
+  }
+
+  #mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #22244a;
+  }
+  #mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  #mainNav .navbar-brand {
+    color: #86974b;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+  }
+  #mainNav .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #fff;
+    letter-spacing: 0.0625em;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #86974b;
+  }
+
+  .btn-primary{
+    background-color: #22244a;
+    border: 0px;
+    border-color: #fff;
+  }
+
+ .btn-primary:hover{
+    background-color: #86974b;
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+  }
+
+
+  .btn-primary:focus{
+    background-color: #86974b;
+    border: 0px;
+    border-color: #fff;
+  }
+
+  .btn:focus {
+    outline: none!important;
+    box-shadow: none;
+  }
+
+  .btn:active {
+    background-color: #86974b;
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+  }
+  .btn-primary:active {
+    background-color: #86974b;
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+  }
+
+  
+
+  
+  header.masthead {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("./images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  header.masthead .masthead-subheading {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 18px;
+    font-family: "Roboto Slab", "Helvetica Neue", Arial, sans-serif;
+    opacity: 0.6;
+  }
+
+  header.masthead .masthead-subheadingmore {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 18px; 
+    padding: 0px 60px 0px 60px;
+    font-family: "Roboto Slab", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  header.masthead .masthead-heading {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .default-margin-top {
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+
+    .default-margin-bottom {
+        margin-bottom: 20px;
+    }
+
+    .default-fonts{
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    }
+
+  #portfolio {
+    margin: 20px 0px 40px 0px;
+    cursor: pointer;
+  }
+
+  #portfolio .portfolio-item {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+  }
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 200, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+  }
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    font-size: 1.25rem;
+    color: white;
+  }
+  #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+    opacity: 1;
+  }
+  #portfolio .portfolio-item .portfolio-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+    font-size: 1.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  .portfolio-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+  }
+  .portfolio-modal .modal-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+  .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .portfolio-modal .modal-content p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .portfolio-modal .modal-content p {
+    margin-bottom: 2rem;
+  }
+  .portfolio-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+  }
+  .portfolio-modal .modal-content img {
+    margin-bottom: 2rem;
+  }
+  .portfolio-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .portfolio-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+
+
+  .btn-openModal {
+    background: #2c2c2c;
+    color: #eee;
+    font-size: 1rem;
+    margin: 2rem;
+    padding: .5rem 1.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .modal-wrapper {
+    background: #fff;
+    width: 80%;
+    max-width: 800px;
+    margin: 4rem auto;
+    transition: all .5s ease;
+  }
+  
+  .modal-header {
+    background: #2c2c2c;
+    color: #e9e9e9;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modal-header span {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .modal-content {
+    padding: 1.5rem 1rem;
+  }
+  
+  .modal-body {
+    margin-bottom: 1rem;
+  }
+  
+  .modal-body h4 {
+    font-size: 1.8rem;
+    color: #DD501D;
+  }
+  
+  .modal-body p {
+    font-size: 1rem;
+    background: #eee;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem 0 2rem 0;
+  }
+  
+  .buttonUrl {
+    display: block;
+    font-size: 1rem;
+    margin: 10px auto 10px auto;
+    padding: 0.5rem 1.8rem;
+    background: #86974b;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+  }
+
+  .buttonUrl a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .back-drop {
+    background: rgba(63, 61, 61, 0.692);
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+  }
+
+  .modal {
+    font-size: 12px;
+  }
+  .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  }
+ .content {
+    width: 100%;
+    padding: 10px 5px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  }
+ .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+
+#sectionHead {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ecece9;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+ 
+#foooter{
+  background-color: #22244a;
+}
+
+.Footer-heading
+{
+  color: #fff;
+  padding: 20px 0px;
+}
+
+.contact-info
+{
+  color: #fff;
+  padding: 10px 10px;
+  width: 70%;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+ 
