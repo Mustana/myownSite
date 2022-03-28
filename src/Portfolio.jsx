@@ -32,7 +32,7 @@ const Portfolio = () => {
                 <PortfolioNavigation />
                     <Routes>
                         <Route path="/" element = {<Videos/>}/>
-                        <Route path="/myownSite" element = {<Videos/>}/>
+                        <Route path="/myownSite" element = {<Frontend/>}/>
                         <Route path="/Videos" element = {<Videos/>}/>
                         <Route path="/Frontend" element = {<Frontend/>}/>
                         <Route path="/DisplayAds" element = {<DisplayAds/>}/>
