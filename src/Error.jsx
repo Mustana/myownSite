@@ -9,7 +9,7 @@ import './Style.css';
 const Error = () => {
     return (
     <>
-        <h1>Error</h1>
+        <h1>Please click on above tab to see my work</h1>
     </>
     );
 }
