@@ -23,7 +23,8 @@ const Portfolio = () => {
         <section className="page-section" id="portfolio">
         <div className="container">
             <div className="text-center default-margin-top">
-                <h2 className="section-heading text-uppercase">Portfolio</h2>
+                <h1 className="section-heading">Portfolio</h1>
+                <h2 className="section-heading subheaderText">Navigate each section by clicking its link below.</h2>
         </div>
    
             <div className="row">

@@ -136,6 +136,16 @@ body {
         margin-bottom: 20px;
     }
 
+    .subheaderText
+    {
+      font-family: "Roboto Slab", "Helvetica Neue", Arial, sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      color: #86974b;
+    }
+
     .default-fonts{
         font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     }
