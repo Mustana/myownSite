@@ -11,8 +11,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
+
+    <Router> 
+    
     <Navigation/>
-    <Masthead/>
+      <Routes>
+      <Route path="/myownSite/" element = {<Masthead/>}/>
+        <Route path="/myownSite/Portfolio" element = {<Portfolio/>}/>
+        <Route path="/myownSite/Skills" element = {<Skills/>}/>
+        <Route path="/myownSite/Contact" element = {<Contact/>}/>
+      </Routes>       
+    </Router>
+
     <Portfolio/>
     <Skills/>
     <Contact/>

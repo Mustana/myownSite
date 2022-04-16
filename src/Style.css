@@ -65,7 +65,7 @@ body {
   .btn-primary:focus{
     background-color: #86974b;
     border: 0px;
-    border-color: #fff;
+    border-color: #86974b;
   }
 
   .btn:focus {
@@ -78,7 +78,23 @@ body {
     border: 0px;
     outline: none;
     box-shadow: none;
+    border-color: #86974b;
   }
+  
+
+  .btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #86974b;
+    border-color: #86974b;
+}
+
+  .active {
+    background-color: #86974b;
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+  }
+
   .btn-primary:active {
     background-color: #86974b;
     border: 0px;
@@ -86,9 +102,6 @@ body {
     box-shadow: none;
   }
 
-  
-
-  
   header.masthead {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
@@ -150,24 +163,24 @@ body {
         font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     }
 
-  #portfolio {
+  #Portfolio {
     margin: 20px 0px 40px 0px;
     cursor: pointer;
   }
 
-  #portfolio .portfolio-item {
+  #Portfolio .portfolio-item {
     max-width: 26rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  #portfolio .portfolio-item .portfolio-link {
+  #Portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
     margin: 20px auto;
   }
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  #Portfolio .portfolio-item .portfolio-link .portfolio-hover {
     display: flex;
     position: absolute;
     width: 100%;
@@ -178,25 +191,25 @@ body {
     opacity: 0;
     transition: opacity ease-in-out 0.25s;
   }
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  #Portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     font-size: 1.25rem;
     color: white;
   }
-  #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+  #Portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
     opacity: 1;
   }
-  #portfolio .portfolio-item .portfolio-caption {
+  #Portfolio .portfolio-item .portfolio-caption {
     padding: 1.5rem;
     text-align: center;
     background-color: #fff;
   }
-  #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  #Portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
     font-size: 1.5rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
     margin-bottom: 0;
   }
-  #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  #Portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-style: italic;
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -255,8 +268,8 @@ body {
   
   .modal-wrapper {
     background: #fff;
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    
     margin: 4rem auto;
     transition: all .5s ease;
   }
@@ -360,14 +373,14 @@ body {
   }
 
 
-#sectionHead {
+#Skills {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #ecece9;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
  
-#foooter{
+#Contact{
   background-color: #22244a;
 }
 
@@ -385,4 +398,66 @@ body {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
 
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
  
+.modal-dialog {
+  width: 100%;
+  height: 800px;
+}
+
+.modal-header {
+  background-color: #337AB7;
+  padding:5px 5px;
+  color:#FFF;
+  border-bottom:1px dashed #337AB7;
+}
+
+.iframeWrapper
+{
+  padding: 0px;
+}
+
+
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.resp-iframe {
+
+
+  width: 100%;
+  height: 500;
+
+}
+
+
+.footerText
+    {
+      font-family: "Roboto Slab", "Helvetica Neue", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: #86974b;
+    }
+
+.mobiletext
+{
+  font-family: "Roboto Slab", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+
+  color: #fff;
+}

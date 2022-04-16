@@ -5,8 +5,6 @@ import './Style.css';
 import Videos from "./Videos";
 import Frontend from "./Frontend";
 import DisplayAds from "./DisplayAds";
-import Error from "./Error";
-import Contact from "./Contact";
 import PortfolioNavigation from "./PortfolioNavigation";
 import { BrowserRouter as Router, Routes , Route} from "react-router-dom";
 
@@ -20,8 +18,8 @@ const Portfolio = () => {
     return (
     <>
 
-        <section className="page-section" id="portfolio">
-        <div className="container">
+        <section className="page-section" id="Portfolio">
+        <div className="container" >
             <div className="text-center default-margin-top">
                 <h1 className="section-heading">Portfolio</h1>
                 <h2 className="section-heading subheaderText">Navigate each section by clicking its link below.</h2>
@@ -32,13 +30,12 @@ const Portfolio = () => {
                 <Router> 
                 <PortfolioNavigation />
                     <Routes>
+                        <Route path="/myownSite/" element = {<Videos/>}/>
                         <Route path="/" element = {<Videos/>}/>
-                        <Route path="/myownSite" element = {<Videos/>}/>
-                        <Route path="/Videos" element = {<Videos/>}/>
-                        <Route path="/Frontend" element = {<Frontend/>}/>
-                        <Route path="/DisplayAds" element = {<DisplayAds/>}/>
+                        <Route path="/myownSite/Videos" element = {<Videos/>}/>
+                        <Route path="/myownSite/Frontend" element = {<Frontend/>}/>
+                        <Route path="/myownSite/DisplayAds" element = {<DisplayAds/>}/>
                         <Route path="*" element = {<Videos/>}/>
-                        <Route path="/contact" element = {<Contact/>}/>
                     </Routes>       
                 </Router>
         

@@ -28,10 +28,10 @@ const VideoData = [
     videoSrc: video_1,
   },
   {
-    imggsrc: video2,
-    tittle: "The Red Sea",
-    subtittled: "Animation",
-    videoSrc: video_2,
+    imggsrc: video6,
+    tittle: "Etisalat Awards",
+    subtittled: "Editing",
+    videoSrc: video_6,
   },
   {
     imggsrc: video3,
@@ -53,10 +53,10 @@ const VideoData = [
     videoSrc: video_5,
   },
   {
-    imggsrc: video6,
-    tittle: "Etisalat - Awards",
-    subtittled: "Editing",
-    videoSrc: video_6,
+    imggsrc: video2,
+    tittle: "The Red sea",
+    subtittled: "Animation",
+    videoSrc: video_2,
   },
   {
     imggsrc: video7,

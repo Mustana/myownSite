@@ -11,16 +11,17 @@ import './Style.css';
 const Frontend = () => {
     return (
     <>
-         <div className="dropdown text-center">
-        <button className="btn btn-secondary dropdown-toggle text-center default-fonts" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-       None
-        </button>
-        <ul className="dropdown-menu dropdown-menu-dark default-fonts" aria-labelledby="dropdownMenuButton2">
-            <li><a className="dropdown-item active" href="#">Games</a></li>
-            <li><a className="dropdown-item" href="#">Html Site</a></li>  
-            <li><a className="dropdown-item" href="#">React Web Apps</a></li>  
-        </ul>
-    </div>
+       
+<div className="container" >
+        <div>
+         <h2 className="section-heading subheaderText"></h2>
+         <div className="col-lg-12 mx-auto text-center default-margin-top">
+             <p className="large text-muted">
+             This is at the core of my skills, where I’ve developed web games, built responsive emailers and <br/>reusable, integrated, cross-browser templates, and implemented Google Analytics and Tag Manager.
+
+                </p></div>
+        </div>
+        </div>
     {
          FrontendData.map((val, ind) => { 
             return <CardsFront key={ind} imgsrc={val.imggsrc} tittle={val.tittle} subtittle={val.subtittled}  url={val.url} />

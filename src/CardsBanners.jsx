@@ -1,22 +1,27 @@
-import React, { useState, useCallback } from 'react';
+
+import React, {useState} from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import {Modal, Button} from 'react-bootstrap';
 import './Style.css';
-import Popup from 'reactjs-popup';
+
+
 
 
 
 
 const CardsBanners = (props) => {
 
+    const [smShow, setSmShow] = useState(false);
+    const [lgShow, setLgShow] = useState(false);
+
     return (
     <>
 
-  
-   <Popup trigger={
-      <div className="col-lg-4 col-sm-6 mb-4">
+
+      <div className="col-lg-4 col-md-4 sm-3" onClick={() => setLgShow(true)}>
             <div className="portfolio-item">
-            <div className="portfolio-hover"   >
+            <div className="portfolio-hover">
                 <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
             </div>
            
@@ -28,23 +33,30 @@ const CardsBanners = (props) => {
               
             </div>
         </div>  
-   } modal nested>
-      
-       {close => (
 
-      <div>
-         <div className="header"> {props.tittle}</div>
-         <iframe width="100%" height="780px" src={props.url}></iframe>
-        
-          <a className="close" onClick={close}>
-          &times;
-        </a>
-      </div>
-    )}
+
+
+     
+      <Modal
+        size="lg"
+        show={lgShow}
+        onHide={() => setLgShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-modal-sizes-title-lg">
+          {props.tittle}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        {props.subtittle}
        
-</Popup>
+        <iframe className="resp-iframe" src={props.url} width={800} height={300}></iframe>
+
        
-        
+        </Modal.Body>
+      </Modal>   
     </>
 );
 }

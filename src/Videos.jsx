@@ -11,15 +11,20 @@ import './Style.css';
 const Videos = () => {
     return (
     <>
-       <div className="dropdown text-center">
-        <button className="btn btn-secondary dropdown-toggle text-center default-fonts" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-       None
-        </button>
-        <ul className="dropdown-menu dropdown-menu-dark default-fonts" aria-labelledby="dropdownMenuButton2">
-            <li><a className="dropdown-item active" href="#">Animation</a></li>
-            <li><a className="dropdown-item" href="#">Social Media</a></li>
-            <li><a className="dropdown-item" href="#">Editing</a></li>    
-        </ul>
+
+
+
+ 
+
+    <div className="container" >
+        <div>
+         <h2 className="section-heading subheaderText"></h2>
+         <div className="col-lg-12 mx-auto text-center default-margin-top">
+             <p className="large text-muted">
+             Alongside leading a team of developers and animators, I’ve managed and executed a wide range of 360 ad campaigns,<br/> creating animatics and editing videos for a variety of online and digital media.
+
+                </p></div>
+        </div>
     </div>
     {
          VideoData.map((val, ind) => { 

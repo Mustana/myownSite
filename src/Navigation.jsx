@@ -1,11 +1,15 @@
 
 import React from "react";
+
+import {HashLink as NavLink} from "react-router-hash-link";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import './Style.css';
 
 
 const Navigation = () => {
+
+  
     return (
     <>
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -17,10 +21,18 @@ const Navigation = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li className="nav-item"><a className="nav-link" href="#services">Portfolio</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#portfolio">About Me</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#about">Skills</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+                        <li className="nav-item">
+                            <NavLink smooth className="nav-link"  to="myownSite/#Portfolio">Portfolio</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink smooth className="nav-link" to="myownSite/#Masthead">About Me</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink smooth className="nav-link" to="myownSite/#Skills">Skills</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink smooth className="nav-link" to="myownSite/#Contact">Contact</NavLink>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -29,6 +41,8 @@ const Navigation = () => {
     </>
     );
 }
+
+
   
 export default Navigation;
 
