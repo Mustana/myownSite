@@ -9,6 +9,8 @@ ReactDOM.render(
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+ console.log("Hello World from Index.js")
+alert("Hello")
 );
 
 // If you want to start measuring performance in your app, pass a function
