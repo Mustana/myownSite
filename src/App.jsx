@@ -17,7 +17,7 @@ function App() {
     <Navigation/>
       <Routes>
       <Route path="/myownSite/" element = {<Masthead/>}/>
-        
+        <Route path="/myownSite/Portfolio" element = {<Portfolio/>}/>
         <Route path="/myownSite/Skills" element = {<Skills/>}/>
         <Route path="/myownSite/Contact" element = {<Contact/>}/>
       </Routes>       
