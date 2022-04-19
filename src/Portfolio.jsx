@@ -17,7 +17,7 @@ const Portfolio = () => {
 
     return (
     <>
-<h2>Hello World</h2>
+
         <section className="page-section" id="Portfolio">
         <div className="container" >
             <div className="text-center default-margin-top">
